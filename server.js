@@ -8,6 +8,8 @@ var mongoose = require("mongoose");
 var axios = require("axios");
 var cheerio = require("cheerio");
 
+
+
 // Require all models
 var db = require("./models");
 
@@ -65,6 +67,7 @@ app.get("/scrape", function(req, res) {
 
     // Send a message to the client
     res.send("Scrape Complete");
+    
   });
 });
 
